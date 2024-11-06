@@ -1,21 +1,4 @@
 
-// Explication du Code
-// Inclusions : On inclut les bibliothèques nécessaires (stdio.h pour les entrées/sorties et math.h pour les calculs mathématiques).
-
-// Fonction EstTriangleRectangle :
-
-// Prend trois longueurs en entrée.
-// Identifie la plus grande longueur comme l'hypoténuse.
-// Vérifie la relation de Pythagore.
-// Retourne 1 (Vrai) si les longueurs peuvent former un triangle rectangle et 0 (Faux) sinon.
-// Fonction main :
-
-// Lit les longueurs des côtés depuis l'utilisateur.
-// Appelle la fonction EstTriangleRectangle pour effectuer la vérification.
-// Affiche le résultat.
-
-// Fonction pour vérifier si les longueurs peuvent former un triangle rectangle
-
 #include <stdio.h>
 #include <math.h>
 
@@ -23,7 +6,7 @@
 int estTriangleRectangle(double a, double b, double c) {
     double hypotenuse, cote1, cote2;
 
-    // Identifier l'hypotenuse et les autres côtés
+    // Identifier l'hypotenuse et les autres c�t�s
     if (a >= b && a >= c) {
         hypotenuse = a;
         cote1 = b;
@@ -40,7 +23,7 @@ int estTriangleRectangle(double a, double b, double c) {
         cote2 = b;
     }
 
-    // Vérifier la relation de Pythagore
+    // V�rifier la relation de Pythagore
     if (hypotenuse * hypotenuse == cote1 * cote1 + cote2 * cote2) {
         return 1; // Vrai
     }
@@ -52,7 +35,7 @@ int estTriangleRectangle(double a, double b, double c) {
 int main() {
     double a, b, c;
 
-    // Lire les longueurs des côtés
+    // Lire les longueurs des c�t�s
     printf("Entrez la longueur du cote a : ");
     scanf("%lf", &a);
     printf("Entrez la longueur du cote b : ");
@@ -60,7 +43,7 @@ int main() {
     printf("Entrez la longueur du cote c : ");
     scanf("%lf", &c);
 
-    // Vérifier si les longueurs peuvent former un triangle rectangle
+    // V�rifier si les longueurs peuvent former un triangle rectangle
     if (estTriangleRectangle(a, b, c)) {
         printf("Les longueurs peuvent former un triangle rectangle.\n");
     }
@@ -70,4 +53,3 @@ int main() {
 
     return 0;
 }
-

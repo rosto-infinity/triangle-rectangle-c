@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1730927965 source:c:\laragon\www\triangle-rectangle-c\triangle-rectangle\triangle-rectangle-c\main.c
+	<stdio.h>
+	<math.h>
+
