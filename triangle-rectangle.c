@@ -1,5 +1,19 @@
 #include <stdio.h>
 #include <math.h>
+// Explication du Code
+// Inclusions : On inclut les bibliothèques nécessaires (stdio.h pour les entrées/sorties et math.h pour les calculs mathématiques).
+
+// Fonction EstTriangleRectangle :
+
+// Prend trois longueurs en entrée.
+// Identifie la plus grande longueur comme l'hypoténuse.
+// Vérifie la relation de Pythagore.
+// Retourne 1 (Vrai) si les longueurs peuvent former un triangle rectangle et 0 (Faux) sinon.
+// Fonction main :
+
+// Lit les longueurs des côtés depuis l'utilisateur.
+// Appelle la fonction EstTriangleRectangle pour effectuer la vérification.
+// Affiche le résultat.
 
 // Fonction pour vérifier si les longueurs peuvent former un triangle rectangle
 int EstTriangleRectangle(double a, double b, double c) {
